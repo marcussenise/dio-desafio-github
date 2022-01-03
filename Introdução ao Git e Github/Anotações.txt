@@ -1,0 +1,54 @@
+Comandos básicos: 
+-Windows-
+- cd
+- dir
+- mkdir
+- del/rmdir
+
+-Bash-
+-cd
+-ls
+-mkdir
+-rm -rf
+--------
+`cd` - (change directory) - possibilita que a gente navegue entre as pastas.
+
+`cd ..`  - volta uma pasta
+
+`cd + nome` Entra na pasta especificada.  
+
+`cls` - (clear screen) - Limpar tela
+
+**`tab`  -** auto complete. ex `cd w` + tab, vai auto completar com o ‘windows’, pois reconhece que na pasta o único w que tem é o windows.
+
+`mkdir` - (make directory) - cria uma pasta.
+
+`echo` - printa de volta no terminal uma frase/texto que vc passa
+
+`>` - É um redirecionador de fluxo. Vai pegar o output (saída função echo) e jogar no arquivo à direita. Se não tiver o arquivo, vai criar pra gente: `echo hello < hello.txt`
+
+`del` - deleta arquivos (diferente de deletar repositórios). `del workspace` - vai apagar tudo que estiver dentro do repositório workspace (mas não deletará a pasta workspace em si).
+
+`rmdir` - vai remover o repositório (toda a pasta e seus arquivos). `rmdir workspace /S /Q`  
+
+`git clone +link`  - clonar repositório
+
+`git init` - criar um repositório do git dentro da pasta.1° ação que deve ser tomada.
+
+`git add` - adiciona todas as alterações. dá início ao versionamento. Move o arquivo pra staged. Se colocarmos um `git add *` ele pega tudo que tá untracked e adiciona.
+
+`git commit -m ”sua mensagem”` - criar o 1° comit
+
+`ls -a` - no bash, lista os arquivos ocultos
+
+`git status` - mostra o status dos arquivos. Vai dizer se o arquivo está untracked, modified, staged.
+
+`mv nomeArquivo.md ./receitas/` - mover um arquivo para outro (no bash)
+
+`git branch` - cria uma branch
+
+PUSH Repo local para repo remoto:
+
+`git remote add origin [https://github.com/marcussenise/livro-receitas.git](https://github.com/marcussenise/livro-receitas.git)` - mover um repo local pra repo remoto. O ‘origin’ é um apelido que damos para não termos que ficar escrevendo o https o tempo inteiro.
+
+`git push origin master` - “Empurrar” nosso arquivo local pro repo remoto. Origin = endereço do repo. Master = branch.
